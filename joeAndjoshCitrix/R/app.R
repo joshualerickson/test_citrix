@@ -4,8 +4,6 @@
 #' @return
 #' @export
 #' @import shiny
-#' @importFrom("datasets", "faithful")
-#' @importFrom("graphics", "hist")
 
 run_app <- function() {
 
