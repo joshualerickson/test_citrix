@@ -49,10 +49,10 @@ server <- function(input, output) {
   # 2. Its output type is a plot
   output$distPlot <- renderPlot({
 
-    x    <- faithful$waiting
+    x    <- datasets::faithful$waiting
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
-    hist(x, breaks = bins, col = "#75AADB", border = "white",
+    graphics::hist(x, breaks = bins, col = "#75AADB", border = "white",
          xlab = "Waiting time to next eruption (in mins)",
          main = "Histogram of waiting times")
 
